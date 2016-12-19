@@ -9,6 +9,7 @@ JS_OUT_MIN=app.bundle.min.js
 
 ELM=elm
 WEBPACK=webpack
+WEBPACK_DEV_SERVER=webpack-dev-server
 
 NUKE=rm -rf
 
@@ -28,6 +29,12 @@ dist-clean:
 open:
 	open index.html
 
+serve:
+	webpack-dev-server
+
+watch:
+	$(WEBPACK) --watch
+
 $(ELM_OUT): $(ELM_SRCS)
 	$(ELM) make $(ELM_IN) --yes --warn --output=$(ELM_OUT)
 
@@ -37,8 +44,6 @@ $(JS_OUT): $(JS_SRCS)
 $(JS_OUT_MIN):
 	$(WEBPACK) --optimize-minimize --output-file $(JS_OUT_MIN)
 
-watch:
-	$(WEBPACK) --watch
 
 b: build
 o: open
