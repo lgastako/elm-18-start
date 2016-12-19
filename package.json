@@ -1,0 +1,24 @@
+{
+  "name": "elm-18-start",
+  "version": "0.1.0",
+  "description": "Elm 18 Starter Project.",
+  "main": "app.js",
+  "dependencies": {
+    "elm-webpack-loader": "^4.0.0",
+    "webpack": "^1.14.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lgastako/elm-18-start.git"
+  },
+  "author": "your-email-here@example.com",
+  "license": "BSD3",
+  "bugs": {
+    "url": "https://github.com/lgastako/elm-18-start/issues"
+  },
+  "homepage": "https://github.com/lgastako/elm-18-start#readme"
+}
