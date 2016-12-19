@@ -26,6 +26,14 @@ clean:
 dist-clean:
 	$(NUKE) elm-stuff $(ELM_OUT)
 
+install-webpack:
+	npm install webpack -g
+
+install-webpack-dev-server:
+	npm install webpack-dev-server -g
+
+install-prereqs: install-webpack install-webpack-dev-server
+
 open:
 	open index.html
 
